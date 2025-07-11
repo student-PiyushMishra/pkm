@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width: 100%;
+}
+.news{
+    width:50vw;
+    max-height:max-content;
+    display:flex;
+    padding:10vw;
+    flex-direction: column;
+    gap:2vh;
+}
+.activities{
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: column;
+    gap:1vh;
+}
+.activity{
+    height:auto;
+    width:100%;
+    display:flex;
+    align-items: center;
+    gap:1vw;
+}
+
+.activity .job .keyword{
+    display:flex;
+    height:100%;
+    color:#39ac31;
+    text-decoration:none;
+    margin-right:1vw;
+}
+
+.activity .date{
+    width:40%;
+    height:100%;
+    display:flex;
+    justify-content: center;
+}
+.activity .job{
+    width:60%;
+    height:100%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width:900px){
+    .news{
+        width:100vw;
+        padding:5vh 3vw;
+    }
+    .activity{
+        gap:3vw;
+    }
+}
+
+hr{
+    color:#39ac31;
+    width:60%;
+    align-self: flex-end;
+}

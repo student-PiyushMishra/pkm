@@ -1,0 +1,11 @@
+.binder{
+    display:flex;
+    width:100vw;
+    height:max-content;
+}
+
+@media (max-width:900px){
+    .binder{
+        flex-direction: column;
+    }
+}

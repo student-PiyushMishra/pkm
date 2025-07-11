@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height:100%;
+    width: 100%;
+}
+
+.main{
+    height:auto;
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    color:white;
+    padding-top:1em;
+}
+
+@keyframes textShine {
+    0% {
+        background-position: 0% 50%;
+    }
+    100% {
+        background-position: 100% 50%;
+    }
+}
+h1 {
+    background: linear-gradient(
+    to right,
+    #1e3f21 20%,           /* dark green shade */
+    #31ac39 30%,           /* your main color */
+    #258a2f 70%,           /* deeper version of #31ac39 */
+    rgba(49, 172, 57, 0.5) 80%  /* translucent touch of #31ac39 */
+);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    background-size: 200% auto;
+    animation: textShine 2s ease-in-out infinite alternate;
+}
+
+.intro{
+    min-height:70vh;
+    max-height: fit-content;
+    width:100vw;
+    padding:1em 10vw;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom:0;
+}
+
+.addr{
+    margin:0;
+    padding:0;
+    display:flex;
+    width:100%;
+    justify-content: left;
+    color:#39ac31;
+}
+
+.intro .text{
+    height:100%;
+    width:50%;
+    font-size: 1.2em;
+    display:flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding:0 10vw;
+    padding-left:2vw;
+}
+
+.intro .img{
+    height:100%;
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding:0 10vw;
+    padding-right:2vw;
+}   
+
+@media (max-width:900px){
+    .intro{
+        flex-direction: column;
+        padding:1em 3.2vw;
+        gap:5vh;
+    }
+    .intro .text{
+        width:100%;
+        height:auto;
+        font-size: 0.97em;
+        letter-spacing: 0.7px;
+        padding:0;
+    }
+    .intro .img{
+        width:100%;
+        height:auto;
+        padding:0;
+    }
+}
+
+img{
+    aspect-ratio: 1.1/1.5;
+    min-height:300px;
+    max-height:400px;
+}
