@@ -1,43 +1,56 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import "../assets/News.components.css"
+import axios from "axios"
 
 const News = () => {
+  const [activitiesData, setActivitiesData] = useState([])
+  const [loading, setLoading] = useState(true)
+  const [error, setError] = useState(false)
+
+  useEffect(() => {
+    const getActivitiesData = async () => {
+      try {
+        const response = await axios.get(`${import.meta.env.VITE_BACKEND_CONNECTION_STRING}activity`)
+        setActivitiesData(response.data)
+      } catch (err) {
+        console.error("Failed to fetch:", err)
+        setError(true)
+      } finally {
+        setLoading(false)
+      }
+    }
+
+    getActivitiesData()
+  }, [])
+
   return (
     <div className="news">
       <h3>News [ Activities Archive ]</h3>
-      <div className="activities">
-          <div className="activity">
-                <div className="date">
-                  25-07-2025
-                </div>
-                <div className="job">
-                  <div className="keyword">Blog:</div> The Potential of Cloud Computing
-                </div>
-          </div><div className="activity">
-                <div className="date">
-                  25-07-2025
-                </div>
-                <div className="job">
-                  <div className="keyword">Blog:</div> The Potential of Cloud Computing
-                </div>
-          </div><div className="activity">
-                <div className="date">
-                  25-07-2025
-                </div>
-                <div className="job">
-                  <div className="keyword">Blog:</div> The Potential of Cloud Computing
-                </div>
-          </div><div className="activity">
-                <div className="date">
-                  25-07-2025
-                </div>
-                <div className="job">
-                  <div className="keyword">Blog:</div> The Potential of Cloud Computing
-                </div>
-          </div>
-      </div>
+
+      {loading && <p className="loader">Loading activities...</p>}
+
+      {!loading && error && <p className="error">Something went wrong. Please try again later.</p>}
+
+      {!loading && !error && activitiesData.length === 0 && (
+        <p className="no-news">No recent news available</p>
+      )}
+
+      {!loading && !error && activitiesData.length > 0 && (
+        <div className="activites">
+          {activitiesData.map((activity) => (
+            <div className="activity" key={activity.uid}>
+              <div className="date">{activity.date.split("T")[0]}</div>
+              <div className="job">
+                <div className="keyword">{activity.keyword}</div> 
+                <a href={activity.href}>{activity.hyperlink}</a>
+              </div>
+            </div>
+          ))}        
+        </div>
+      )}
     </div>
   )
 }
 
 export default News
+

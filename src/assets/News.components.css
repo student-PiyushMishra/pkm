@@ -33,9 +33,12 @@ html,body{
 .activity .job .keyword{
     display:flex;
     height:100%;
-    color:#39ac31;
+    color:#31ac39;
+    font-size:large;
     text-decoration:none;
     margin-right:1vw;
+    min-width:30%;
+    max-width:30%;
 }
 
 .activity .date{
@@ -45,11 +48,11 @@ html,body{
     justify-content: center;
 }
 .activity .job{
-    width:60%;
+    width:70%;
     height:100%;
     display:flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 @media (max-width:900px){
@@ -60,6 +63,21 @@ html,body{
     .activity{
         gap:3vw;
     }
+}
+
+.job a{
+  width:70%;
+  display:flex;
+  align-items:center;
+  justify-content: left;
+  font-size:medium;
+  text-decoration:underline 1px #39ac31;
+  line-height:150%;
+}
+
+.job a:hover{
+  color: #39ac31;
+  text-decoration:none;
 }
 
 hr{
