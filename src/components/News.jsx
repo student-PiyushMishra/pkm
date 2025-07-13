@@ -41,7 +41,7 @@ const News = () => {
             <div className="activity" key={activity.uid}>
               <div className="date">{activity.date.split("T")[0]}</div>
               <div className="job">
-                <span className="keyword">{activity.keyword}<a href={activity.href}>{activity.hyperlink}</a></span> 
+                <span className="keyword">{activity.keyword}&nbsp;<a href={activity.href}>{activity.hyperlink}</a></span> 
               </div>
             </div>
           ))}        
