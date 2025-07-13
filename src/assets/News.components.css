@@ -15,64 +15,47 @@ html,body{
     flex-direction: column;
     gap:2vh;
 }
+
 .activities{
-    width:100%;
-    height:auto;
-    display:flex;
-    flex-direction: column;
-    gap:1vh;
+  display:flex;
+  flex-direction:column;
+  width:100%;
+  gap:1vh;
 }
+
 .activity{
     height:auto;
     width:100%;
     display:flex;
-    align-items: center;
+    align-items: flex-start;
+    justify-content: space-between;
     gap:1vw;
+    line-height:150%;
 }
 
 .activity .job .keyword{
-    display:flex;
     height:100%;
     color:#31ac39;
     font-size:large;
     text-decoration:none;
     margin-right:1vw;
-    min-width:30%;
-    max-width:30%;
+    width:100%;
+    font-family:"Zilla Slab"
 }
 
 .activity .date{
-    width:40%;
-    height:100%;
+    min-height:100%;
     display:flex;
-    justify-content: center;
+    font-family:"Zilla Slab";
 }
 .activity .job{
     width:70%;
-    height:100%;
-    display:flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-@media (max-width:900px){
-    .news{
-        width:100vw;
-        padding:5vh 3vw;
-    }
-    .activity{
-        gap:3vw;
-    }
+    height:100%; 
 }
 
 .job a{
-  width:70%;
-  display:flex;
-  align-items:center;
-  justify-content: left;
   font-size:medium;
   text-decoration:underline 1px #39ac31;
-  line-height:150%;
 }
 
 .job a:hover{
@@ -80,8 +63,12 @@ html,body{
   text-decoration:none;
 }
 
-hr{
-    color:#39ac31;
-    width:60%;
-    align-self: flex-end;
+@media (max-width:900px){
+  .news{
+    width:100vw;
+    padding:3vw;
+  }
+  .activity{
+    width:94vw;
+  }
 }

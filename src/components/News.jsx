@@ -36,13 +36,12 @@ const News = () => {
       )}
 
       {!loading && !error && activitiesData.length > 0 && (
-        <div className="activites">
+        <div className="activities">
           {activitiesData.map((activity) => (
             <div className="activity" key={activity.uid}>
               <div className="date">{activity.date.split("T")[0]}</div>
               <div className="job">
-                <div className="keyword">{activity.keyword}</div> 
-                <a href={activity.href}>{activity.hyperlink}</a>
+                <span className="keyword">{activity.keyword}<a href={activity.href}>{activity.hyperlink}</a></span> 
               </div>
             </div>
           ))}        
