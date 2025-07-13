@@ -1,4 +1,5 @@
 import "../assets/404.css"
+import {Link} from "react-router-dom"
 
 export default function NotFound() {
   return (
@@ -19,7 +20,7 @@ export default function NotFound() {
 
             <p>the page you are looking for not avaible!</p>
 
-            <a href="/" className="link_404">Go to Home</a>
+            <Link to="/" className="link_404">Go to Home</Link>
           </div>
         </div>
       </div>
