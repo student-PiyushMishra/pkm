@@ -1,26 +1,27 @@
 import React from 'react'
+import {Link} from "react-router-dom"
 import "../assets/Outputs.components.css"
 
 const Outputs = () => {
     return (
         <div className='outputs'>
             <h3>Outputs</h3>
-            <a href="/blogs">
+            <Link to="/blogs">
                 <div className="output">
                     Blogs
                 </div>
-            </a>
-            <a href="/podcasts">
+            </Link>
+            <Link to="/podcasts">
             <div className="output">
                 Podcasts
             </div> 
-            </a>
-            <a href="/diaries">
+            </Link>
+            <Link to="/diaries">
             <div className="output">
                 Diary Entries
             </div>
 
-            </a>
+            </Link>
             <a href="https://github.com/student-PiyushMishra/">
             <div className="output">
                 GitHub Repositories
