@@ -1,0 +1,57 @@
+.blogsArchive{
+  min-height:70vh;
+  width:100vw;
+  max-height:fit-content;
+  padding:2vw 3vw;
+}
+
+.heading{
+  width:100%;
+  height:auto;
+  font-size:30px;
+  text-align:center;
+}
+
+.blogs{
+  height:fit-content;
+  width:100%;
+  display:flex;
+  flex-direction:column;
+  gap:3vh;
+  margin-top:2em;
+}
+
+.blog{
+  padding-top:10px;
+  width:100%;
+  max-width:550px;
+  margin: 0 auto;
+  height:fit-content;
+  display:flex;
+  flex-direction:column;
+  border-top:1px solid white;
+  border-bottom:1px soild white;
+  text-align:left;
+  gap:1rem;
+  #title{
+    color:gray;
+    font-family: "Zilla Slab";
+    font-size:25px;
+    margin-left:2vw;
+  }
+  #date{
+    font-family:"Zilla Slab";
+    color:#31ac39;
+    margin-left:2vw;
+  }
+  #intro{
+    letter-spacing:.5px;
+    font-size:normal;
+  }
+  #read_more{
+    font-family:'Zilla Slab';
+    color:#31ac39;
+    margin-top:1vh;
+    text-align:right;
+  }
+}

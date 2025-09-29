@@ -6,6 +6,7 @@
 html,body{
     height:100%;
     width: 100%;
+    overflow-x:hidden;
 }
 .news{
     width:50vw;
@@ -56,11 +57,17 @@ html,body{
 .job a{
   font-size:medium;
   text-decoration:underline 1px #39ac31;
+  transition:0.3s all ease;
 }
 
-.job a:hover{
-  color: #39ac31;
-  text-decoration:none;
+.job:hover{
+  a{
+    color: #39ac31;
+    text-decoration:none;
+  }
+  .keyword{
+    color:white;
+  }
 }
 
 @media (max-width:900px){

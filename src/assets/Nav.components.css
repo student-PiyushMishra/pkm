@@ -16,6 +16,7 @@ div.nav{
     color:black;
     justify-content: space-between;
     color:white;
+    border-bottom:1px solid white;
 }
 
 div.locator{
