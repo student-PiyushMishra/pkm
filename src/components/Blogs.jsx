@@ -25,12 +25,12 @@ const BlogsArchive = ()=>{
   
   return (
     <div className="blogsArchive">
-        <div className="heading">
-          Blogs Archive
+        <div className="strip heading">
+          <h1>Blogs Archive</h1>
         </div>
         {loading && <p className="loader">Loading Archive...</p>}
 
-        {!loading && error && <p className="error">Something went wrong. Please try again later.</p>}
+        {!loading && error && <div className="blogs"><p className="error">Something went wrong. Please try again later.</p></div>}
 
         {!loading && !error && blogsData.length === 0 && (
           <p className="no-blogs">No Data Available Currently...</p>

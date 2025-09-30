@@ -20,21 +20,17 @@ body {
 }
 
 .output {
-    width: 100%;
+    width: fit-content;
     height: auto;
     display: flex;
+    color:#333333;
     flex-direction: column;
     gap: 1vh;
     -webkit-user-select: none;
-    text-decoration: 1px #31ac39 underline;
     transition:0.3s all ease;
     cursor:pointer;
 }
 
-.output:hover{
-    color:#39ac50;
-    text-decoration:1px;
-}
 
 @media (max-width:900px) {
     .outputs {

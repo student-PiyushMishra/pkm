@@ -3,8 +3,10 @@ import "../assets/Intro.components.css"
 const Intro = () => {
   return (
     <div className='main'>
-      <h1>Piyush Mishra</h1>
-      <div className="intro">
+    <div className="strip">
+    <h1>Piyush Mishra</h1>
+    </div>
+            <div className="intro">
         <div className="img">
           <img src="https://res.cloudinary.com/degc4ydyf/image/upload/v1752008393/avatar_vn7z6s.jpg" alt="Piyush Mishra's pic" />
           <span className="addr">Bihar, India</span>

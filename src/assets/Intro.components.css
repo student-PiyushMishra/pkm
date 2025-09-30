@@ -16,34 +16,24 @@ html,body{
     flex-direction:column;
     align-items: center;
     justify-content: center;
-    color:white;
-    padding-top:1em;
+    color:black;
+}
+h1 {       
+
+  font-family:"shi24";
+  color:#333333;
+  font-size:40px; 
+  letter-spacing:-1px;
+  margin-top:auto;
+  width:100vw;
 }
 
-@keyframes textShine {
-    0% {
-        background-position: 0% 50%;
-    }
-    100% {
-        background-position: 100% 50%;
-    }
-}
-h1 {
-    background: linear-gradient(
-    to right,
-    #1e3f21 20%,           /* dark green shade */
-    #31ac39 30%,           /* your main color */
-    #258a2f 70%,           /* deeper version of #31ac39 */
-    rgba(49, 172, 57, 0.5) 80% ); /* translucent touch of #31ac39 */
-    font-family:"Zilla Slab";
-    color:white;
-
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    text-fill-color: transparent;
-    background-size: 200% auto;
-    animation: textShine 2s ease-in-out infinite alternate;
+.strip{
+  width:100vw;
+  padding:1em 0em;
+  text-align:center;
+  background-color:rgba(175,175,175,0.1);
+  border-bottom: solid 1px rgba(51,51,51,0.24);
 }
 
 .intro{
@@ -63,7 +53,7 @@ h1 {
     display:flex;
     width:100%;
     justify-content: center;
-    color:#39ac31;
+    color:#ff4646;
 }
 
 .intro .text{
@@ -86,6 +76,7 @@ h1 {
     justify-content: center;
     padding:0 10vw;
     padding-right:2vw;
+    background-blend-mode: color-burn;
 }   
 
 @media (max-width:900px){

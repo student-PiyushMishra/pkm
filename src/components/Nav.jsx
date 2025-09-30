@@ -16,6 +16,9 @@ const Nav = () => {
 
   return (
     <div className='nav'>
+    <div className="logo">
+      
+    </div>
       <div className="locator">
         <span onClick={() => handleClick('/')} className="crumb">Home</span>
         {displayParts.map((part, index) => (
@@ -35,7 +38,7 @@ const Nav = () => {
       </div>
       <div className="options">
         <a href="https://github.com/student-PiyushMishra"><i class="ri-github-fill"></i></a>
-        <a href="http://mailto:student.piyushmishra@gmail.com">Email</a>
+        <a className="move_over" href="http://mailto:student.piyushmishra@gmail.com">Email</a>
       </div>
     </div>
   );

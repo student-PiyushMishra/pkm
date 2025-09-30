@@ -4,7 +4,7 @@ import Footer from "./Footer.jsx"
 
 export default function Layout() {
   return (
-    <div>
+    <div className="layout">
 	<Nav />
 	  <Outlet />
   <Footer />

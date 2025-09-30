@@ -2,14 +2,6 @@
   min-height:70vh;
   width:100vw;
   max-height:fit-content;
-  padding:2vw 3vw;
-}
-
-.heading{
-  width:100%;
-  height:auto;
-  font-size:30px;
-  text-align:center;
 }
 
 .blogs{
@@ -19,6 +11,8 @@
   flex-direction:column;
   gap:3vh;
   margin-top:2em;
+  justify-content:center;
+  align-items:center;
 }
 
 .blog{

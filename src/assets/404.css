@@ -13,7 +13,6 @@
   align-items:center;
   justify-content: center;
   position:relative;
-  color:white;
 }
 
 .page_404 h1{
@@ -22,7 +21,6 @@
 
 .page_404 img {
   width: 100%;
-  background-color: red;
 }
 
  .four_zero_four_bg{
@@ -48,13 +46,12 @@ h1.text-center{
 
 .constant_box_404 h3 {
   font-size: 80px;
-  color:white;
 }
 
 .link_404 {
   color: #fff !important;
   padding: 10px 20px;
-  background: #39ac31;
+  background: #ff4646;
   margin: 20px 0;
   display: inline-block;
 }

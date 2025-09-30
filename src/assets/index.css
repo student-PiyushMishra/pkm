@@ -6,8 +6,41 @@
     -webkit-tap-highlight-color:transparent;
 }
 html,body{
-    height:100%;
+    height:fit-content;
     width: 100%;
-    background-color:#010409;
+    background-color:#F7F7F7;
     color:white;
+    position:relative;
+}
+
+@font-face {
+  font-family: "shi24";
+  src: url("./MessinaSans-Regular.woff2") format("woff2");
+  font-weight:normal;
+  font-size:style;
+  font-display:normal;
+}
+
+.layout {
+  position: relative;
+  width: 100vw;
+  min-height: 100vh;
+  z-index: 0; /* Create stacking context */
+}
+
+.layout::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 5vw;
+  width: 1px;
+  background-color: rgba(51,51,51,0.24);
+  /* border-right:1px solid white; */
+  /* border-left:1px solid white; */
+  z-index:-1;
+}
+
+::-webkit-scrollbar{
+  display:none;
 }

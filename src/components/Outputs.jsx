@@ -7,23 +7,23 @@ const Outputs = () => {
         <div className='outputs'>
             <h3>Outputs</h3>
             <Link to="/blogs">
-                <div className="output">
+                <div className="move_over output">
                     Blogs
                 </div>
             </Link>
             <Link to="/podcasts">
-            <div className="output">
+            <div className="move_over output">
                 Podcasts
             </div> 
             </Link>
             <Link to="/diaries">
-            <div className="output">
+            <div className="move_over output">
                 Diary Entries
             </div>
 
             </Link>
             <a href="https://github.com/student-PiyushMishra/">
-            <div className="output">
+            <div className="move_over output">
                 GitHub Repositories
             </div></a>
         </div>

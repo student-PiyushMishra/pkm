@@ -1,11 +1,11 @@
 .footer{
     width:100vw;
-    height:50px;
+    height:70px;
     display:flex;
     align-items:center;
     justify-content:center;
-    color:#39ac31;
+    color:#ff4646;
     padding:2vh 0;
-    font-size: medium;
-    font-family:"Zilla Slab"
+    font-size:large;
+    font-family:"Zilla Slab";
 }
