@@ -37,7 +37,7 @@ html,body{
 
 .activity .job .keyword{
     height:100%;
-    color:#31ac39;
+    color:#ff4646;
     font-size:large;
     text-decoration:none;
     margin-right:1vw;
@@ -57,26 +57,27 @@ html,body{
 
 .job a{
   font-size:medium;
-  text-decoration:underline 1px #39ac31;
   transition:0.3s all ease;
 }
 
 .job:hover{
   a{
-    color: #39ac31;
+    color: #ff4646;
     text-decoration:none;
   }
   .keyword{
-    color:white;
+    color:#333333;
   }
 }
 
 @media (max-width:900px){
   .news{
     width:100vw;
-    padding:3vw;
+    padding:3vw 6vw;
+    padding-right:0;
+    word-wrap:break;
   }
   .activity{
-    width:94vw;
+    width:100%;
   }
 }

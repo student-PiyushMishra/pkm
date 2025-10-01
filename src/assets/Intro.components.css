@@ -90,7 +90,8 @@ h1 {
         height:auto;
         font-size: 0.97em;
         letter-spacing: 0.7px;
-        padding:0;
+        padding-left:3vw;
+        padding-right:0;
     }
     .intro .img{
         width:100%;

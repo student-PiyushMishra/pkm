@@ -35,6 +35,6 @@ body {
 @media (max-width:900px) {
     .outputs {
         width: 100vw;
-        padding: 5vh 3vw;
+        padding: 5vh 6vw;
     }
 }

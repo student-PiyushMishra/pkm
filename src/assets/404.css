@@ -13,6 +13,8 @@
   align-items:center;
   justify-content: center;
   position:relative;
+  text-align:center;
+  padding-top: 0;
 }
 
 .page_404 h1{
@@ -27,6 +29,8 @@
   background-image: url('../404.gif');
   height: 400px;
   background-position: center;
+  max-width:400px;
+  margin:0 auto;
 }
 
  .four_zero_four_bg p{
