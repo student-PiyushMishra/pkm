@@ -33,7 +33,7 @@ const BlogsArchive = ()=>{
         {!loading && error && <div className="blogs"><p className="error">Something went wrong. Please try again later.</p></div>}
 
         {!loading && !error && blogsData.length === 0 && (
-          <p className="no-blogs">No Data Available Currently...</p>
+          <div className="blogs"><p className="no-blogs">No Data Available Currently...</p></div>
         )}
         {!loading && !error && blogsData.length > 0 && (
             <div className="blogs">
