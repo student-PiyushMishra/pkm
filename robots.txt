@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://pkm-the-pm.vercel.app/sitemap.xml
