@@ -42,7 +42,8 @@ html,body{
     text-decoration:none;
     margin-right:1vw;
     width:100%;
-    font-family:"Zilla Slab"
+    font-family:"Zilla Slab";
+    
 }
 
 .activity .date{
@@ -52,11 +53,13 @@ html,body{
 }
 .activity .job{
     width:70%;
+    color:#333333;
     height:100%; 
 }
 
 .job a{
   font-size:medium;
+  text-decoration:underline 1px solid #ff4646;
   transition:0.3s all ease;
 }
 
