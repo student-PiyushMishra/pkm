@@ -5,7 +5,7 @@ import "../assets/Outputs.components.css"
 const Outputs = () => {
     return (
         <div className='outputs'>
-            <h3>Outputs</h3>
+            <h3>Outputs [ You can click on them ]</h3>
             <Link to="/blogs">
                 <div className="move_over output">
                     Blogs
